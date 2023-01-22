@@ -8,7 +8,7 @@ export default function PokeInfoCard({
 }) {
 
     return (
-
+        <div></div>
     )
 }
 
