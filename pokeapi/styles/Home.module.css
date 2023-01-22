@@ -6,7 +6,10 @@
   padding: 6rem;
   min-height: 100vh;
   background-color: #C2C2C2;
-  background-image:url('../public/Pokeball\ background.png') no-repeat center center/cover;
+  background-image:url('../public/Pokeball\ background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   
 }
 
