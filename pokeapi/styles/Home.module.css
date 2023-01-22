@@ -5,7 +5,28 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-color: #C2C2C2;
+  background-image:url('../public/Pokeball\ background.png') no-repeat center center/cover;
+  
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: center;
+}
+
 
 .description {
   display: inherit;
