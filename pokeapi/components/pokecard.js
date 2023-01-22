@@ -1,6 +1,10 @@
 import styled from 'styled-components' 
 
-export default function PokeCard() {
+export default function PokeCard({
+  text="",
+  src="",
+  me=""
+}) {
     return (
 
         <Card> <img
@@ -12,10 +16,10 @@ export default function PokeCard() {
       />
       
 
-      <Typography> 004  Charmander </Typography>
+      <Typography marR={me}>{text}</Typography>
       <img
         
-        src="Charmander.png"
+        src={src}
         alt="Charmander"
         width={70}
         height={70}
@@ -27,8 +31,8 @@ export default function PokeCard() {
 }
 
 const Card = styled.div `
-width: 400px;
-height: 110px;
+width: 350px;
+height: 80px;
 display: flex;
 flex-direction:row;
 color: #FFFFFF;
@@ -37,13 +41,16 @@ box-shadow: 5px 10px #888888;
 border-radius: 12px;
 align-content: center;
 padding: 10px;
-
+justify-items:center;
+margin-bottom:30px;
 `
 
 const Typography = styled.div `
-font-size: 30px;
+font-size: 24px;
 color: black;
 justify-content: center;
 margin-top: 10px;
 padding: 10px;
+text-align:center;
+margin-right:${props=>props.marR};
 `

@@ -15,3 +15,10 @@ body{
   .display img{
       width:200px;
   }
+  .space{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 30px;
+    margin-left: -600px;
+  }
