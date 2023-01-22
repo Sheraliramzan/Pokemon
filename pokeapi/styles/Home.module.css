@@ -3,33 +3,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 10rem;
   min-height: 100vh;
   background-color: #C2C2C2;
   background-image:url('../public/Pokeball\ background.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  align-content: center;
   
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  justify-content: center;
-  margin-left: 50px;
-}
 
 
 .description {

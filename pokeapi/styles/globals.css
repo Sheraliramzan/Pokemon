@@ -105,3 +105,11 @@ a {
     color-scheme: dark;
   }
 }
+
+
+.Cardspace {
+display: flex;
+flex-direction: column;
+position: relative;
+bottom: 30px;
+}

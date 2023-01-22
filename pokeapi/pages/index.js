@@ -17,10 +17,11 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <AshCard></AshCard>
-        <div className={styles.row}>
-          <div className={styles.column}>
-        <PokeCard></PokeCard>
-        </div>
+      <div className='Cardspace'> 
+       <PokeCard text='025 Pikachu' src="Pikachu.png" margin="40px"/>
+       <PokeCard text='001 Bulbasaur' src="Bulbasaur.png"/>
+        <PokeCard text='004 Charmander' src="Charmander.png"/>
+        <PokeCard text='034 Charmander' src="Charmander.png" src1='Pokeball.png'/>
         </div>
       </main>
     </>
