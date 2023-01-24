@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import PokeCard from '../components/pokecard'
 import AshCard from '../components/AshCard'
+import PokeInfoCard from '../components/InfoCard'
 
 
 export default function Home() {
@@ -16,11 +17,25 @@ export default function Home() {
       </Head>
       <main className={styles.bg}>
         <AshCard/>
+        <div className='contain'> 
         <div className='space'>
         <PokeCard text='004 Charmander' src='Charmander.png'/>
-        <PokeCard text='025 Charman' src='Charmander.png' me='30px'/>
+        <PokeCard text='025 Pikachu' src='Pikachu.png' me='46px'/>
         <PokeCard text='004 Charmander' src='Charmander.png'/>
         <PokeCard text='004 Charmander' src='Charmander.png'/>
+        </div>
+        <div className='space1'>
+        <PokeCard text='004 Charmander' src='Charmander.png'/>
+        <PokeCard text='025 Charman' src='Charmander.png' me='50px'/>
+        <PokeCard text='004 Charmander' src='Charmander.png'/>
+        <PokeCard text='004 Charmander' src='Charmander.png'/>
+        </div>
+
+        <div className='space2'> 
+        <PokeInfoCard text="025" src="Pikachu.png"></PokeInfoCard>
+        
+        
+        </div>
         </div>
       </main>
     </>
