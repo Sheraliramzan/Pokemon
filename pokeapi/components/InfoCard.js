@@ -6,7 +6,7 @@ export default function PokeInfoCard({
   me=""
 }) {
     return (
-
+        <RedCard>
         <Card> 
         <Typography></Typography>
       
@@ -20,25 +20,47 @@ export default function PokeInfoCard({
         height={200}
         margin-top={-50}
       />
-    
+        <Line></Line>
       
       </Card>
+      </RedCard>
     )
 }
 
 const Card = styled.div `
-width: 300px;
-height: 500px;
+width: 350px;
+height: 450px;
 display: flex;
 flex-direction:row;
 color: #FFFFFF;
 background-color: #FFFFFF;
-box-shadow: 5px 10px #888888;
 border-radius: 12px;
 align-content: center;
 padding: 10px;
 justify-items:center;
 margin-bottom:30px;
+margin-left: -24px;
+`
+
+const RedCard = styled.div `
+width: 350px;
+height: 450px;
+
+color: #FFFFFF;
+background-color: #C93030;
+box-shadow: 5px 7px #888888;
+border-radius: 12px;
+align-content: center;
+padding: 10px;
+justify-items:center;
+margin-bottom:30px;
+position: relative;
+left: 30px;
+`
+
+const Line = styled.hr`
+border-top: 3px solid #bbb;
+
 `
 
 const Typography = styled.div `
