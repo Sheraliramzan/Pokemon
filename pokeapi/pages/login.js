@@ -1,0 +1,85 @@
+//ash's email is ashketchum@pokemon.com and his password is pikachu
+import React from 'react';
+import {  onAuthStateChanged, 
+          signInWithEmailAndPassword,
+          signOut
+        } from "firebase/auth";
+import { useState }  from 'react';
+import { auth } from '../firebase/firebase.config';
+import styles from '../styles/Home.module.css'
+
+
+export default function Home() {
+
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
+
+  const [user, setUser] = useState({});
+
+  
+
+  const login = async () => {
+    try {
+      const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
+      console.log(user);
+    } catch(error) {
+      console.log(error.message);
+    }
+  }
+
+  const logout = async () => {
+    await signOut(auth);
+    console.log("user logged out");
+  }
+
+  React.useEffect(() => {
+    onAuthStateChanged(auth, (currentUser) => setUser(currentUser))
+  }, [])
+
+
+  const handleSubmit = event => {
+    console.log("handle submit rand")
+    event.preventDefault();
+    event.target.reset();
+  }
+
+  return (
+    <div className={styles.bg}>
+    <div className={styles.mainCont}>
+      <h1>Welcome to your Pokedex!</h1>
+      <div className={styles.loginCont}>
+        <form onSubmit={handleSubmit}>
+          <h2>Login</h2>
+          <div>
+            <div>
+              <label>Email</label>
+              <input
+                placeholder="Email..."
+                onChange={(event) => {
+                  setLoginEmail(event.target.value)
+                }}
+              />
+              <label>Password</label>
+              <input
+                placeholder="Password..."
+                onChange={(event) => {
+                  setLoginPassword(event.target.value)
+                }}    
+              />
+            </div>
+            <button onClick={login} type="button" className={styles.button}>Login User</button>
+          </div>
+        </form>
+
+        <div className="relative">
+          <h2>User Logged in:</h2>
+          <div className="flow-root m-2 p-2">
+            {user?.email}
+          </div>
+          <button onClick={logout} type="button" className={styles.button}>Sign Out</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  )
+}
