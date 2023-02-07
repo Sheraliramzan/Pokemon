@@ -1,15 +1,13 @@
-*{
-  margin: 0;
-  padding: 0;
-}
 body{
+    margin: 0%;
+    padding: 0%;
     background-color: lightgoldenrodyellow;
 }
 .display{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: -90px;
   }
   .display h3,h4{
     margin:6px;
@@ -24,11 +22,7 @@ body{
     bottom: 30px;
     margin-left: -600px;
   }
-  .pokihead{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-  }
+  .
   .space1 {
     display: flex;
     flex-direction: column;

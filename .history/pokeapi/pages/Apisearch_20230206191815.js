@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
-import axios from 'axios'
+import  { Axios } from 'axios'
 
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
     const [choose,setChoose ] = useState(false);
 
     const pokeSearch = () =>{
-      axios.get(`https://pokeapi.co/api/v2/pokemon/${Poke}`).then((response)=>{
+      Axios.get(`https://pokeapi.co/api/v2/pokemon/${Poke}`).then((response)=>{
         setPokeEl({
           name:Poke, 
           species: response.data.species.name, 
@@ -43,8 +43,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.mainCont}>
-        <div className={styles.main1}>
-          <h1 className='headpok'>Pokemon</h1>
+        <div className={styles.main}>
+          <h1>Pokemon</h1>
           <input className={styles.input} type="text" onChange={(event)=>{
             setPoke(event.target.value)
           }}/>
@@ -61,14 +61,10 @@ export default function Home() {
                 <h4>Hp: {PokeEl.hp}</h4>
                 <h4>Attak: {PokeEl.attack}</h4>
                 <h4>Defense: {PokeEl.defense}</h4>
-                
               </>
-              
             )}
         </div>
       </main>
     </>
-    
   )
-  
 }
