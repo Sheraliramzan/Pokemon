@@ -1,10 +1,11 @@
 //ash's email is ashketchum@pokemon.com and his password is pikachu
 import React from 'react';
-import {  onAuthStateChanged, 
-          signInWithEmailAndPassword,
-          signOut
-        } from "firebase/auth";
-import { useState }  from 'react';
+import {
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signOut
+} from "firebase/auth";
+import { useState } from 'react';
 import { auth } from '../firebase/firebase.config';
 import styles from '../styles/Home.module.css';
 
@@ -18,13 +19,13 @@ export default function Home() {
 
   const [user, setUser] = useState({});
 
-  
+
 
   const login = async () => {
     try {
       const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
       console.log(user);
-    } catch(error) {
+    } catch (error) {
       console.log(error.message);
     }
   }
@@ -47,49 +48,58 @@ export default function Home() {
 
   return (
     <div className={styles.bg}>
-    <div className={styles.mainCont}>
-    <img
-        
-        src="pokeverse.png"
-        alt="Pokeball"
-        width={300}
-        height={70}
-      />
-      <h1>Welcome to your Pokedex!</h1>
-      <div className={styles.loginCont}>
-       <div className={styles.space}> 
-        <form onSubmit={handleSubmit}>
-          <h2>Login</h2>
-          <div>
-            <div>
-              <label className={styles.Labelheader}>Email</label>
-              <input className={styles.Logincont}
-                placeholder="Email..."
-                onChange={(event) => {
-                  setLoginEmail(event.target.value)
-                }}
-              />
-              <label>Password</label>
-              <input className={styles.Logincont}
-                placeholder="Password..."
-                onChange={(event) => {
-                  setLoginPassword(event.target.value)
-                }}    
-              />
-            </div>
-            <button onClick={login} type="button" className={styles.button}>Sign In</button>
-          </div>
-        </form>
+    <div className={styles.loginspace}>
+      <div className={styles.mainCont}>
+        <img
 
-        <div className="relative">
-          <h2>User Logged in:</h2>
-          <div className="flow-root m-2 p-2">
-            {user?.email}
+          src="pokeverse.png"
+          alt="Pokeball"
+          width={450}
+          height={120}
+          margin-bottom={50}
+          
+        />
+        <h1>Let's Catch em' all</h1>
+        <div className={styles.loginCont}>
+          
+            <form onSubmit={handleSubmit}>
+              <h2 className={styles.greyheader}>please enter your details</h2>
+              <div>
+                <div>
+                <div className={styles.Inputspacing}>
+                  <label className={styles.Labelheader}>Email</label>
+                  <input className={styles.Logincont}
+                    placeholder="Email..."
+                    onChange={(event) => {
+                      setLoginEmail(event.target.value)
+                    }}
+                  />
+                </div>
+                  <label className={styles.Labelheader}>Password</label>
+                  <input className={styles.Logincont}
+                    placeholder="Password..."
+                    onChange={(event) => {
+                      setLoginPassword(event.target.value)
+                    }}
+                  />
+                </div>
+                <div className={styles.Buttonspacing}> 
+                <button onClick={login} type="button" className={styles.button}>Sign In</button>
+                </div>
+              </div>
+            </form>
+
+            <div className="relative">
+              <h2>User Logged in:</h2>
+              <div className="flow-root m-2 p-2">
+                {user?.email}
+              </div>
+              <div className={styles.Buttonspacing}> 
+              <button onClick={logout} type="button" className={styles.button}>Sign Out</button>
+              </div>
+            </div>
           </div>
-          <button onClick={logout} type="button" className={styles.button}>Sign Out</button>
         </div>
-      </div>
-      </div> 
       </div>
     </div>
   )
