@@ -47,9 +47,9 @@ export default function Home() {
   }
 
   return (
-    <div className={styles.bg}>
+    <div className={styles.loginbg}>
     <div className={styles.loginspace}>
-      <div className={styles.mainCont}>
+      <div className={styles.loginCont}>
         <img
 
           src="pokeverse.png"

@@ -120,6 +120,20 @@
    Includes spacing and flex displays to for the login content
 */
 
+.loginbg{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem;
+  min-height: 100vh;
+  background-image:url('../public/Pokedex\ bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  align-content: center;
+  background-color: rgb(237, 237, 237);
+
+}
 .Logincont {
   display: flex;
   flex-direction: row;
