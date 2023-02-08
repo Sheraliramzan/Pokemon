@@ -6,7 +6,9 @@ import {  onAuthStateChanged,
         } from "firebase/auth";
 import { useState }  from 'react';
 import { auth } from '../firebase/firebase.config';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
+
+
 
 
 export default function Home() {
@@ -46,28 +48,36 @@ export default function Home() {
   return (
     <div className={styles.bg}>
     <div className={styles.mainCont}>
+    <img
+        
+        src="pokeverse.png"
+        alt="Pokeball"
+        width={300}
+        height={70}
+      />
       <h1>Welcome to your Pokedex!</h1>
       <div className={styles.loginCont}>
+       <div className={styles.space}> 
         <form onSubmit={handleSubmit}>
           <h2>Login</h2>
           <div>
             <div>
-              <label>Email</label>
-              <input
+              <label className={styles.Labelheader}>Email</label>
+              <input className={styles.Logincont}
                 placeholder="Email..."
                 onChange={(event) => {
                   setLoginEmail(event.target.value)
                 }}
               />
               <label>Password</label>
-              <input
+              <input className={styles.Logincont}
                 placeholder="Password..."
                 onChange={(event) => {
                   setLoginPassword(event.target.value)
                 }}    
               />
             </div>
-            <button onClick={login} type="button" className={styles.button}>Login User</button>
+            <button onClick={login} type="button" className={styles.button}>Sign In</button>
           </div>
         </form>
 
@@ -79,7 +89,10 @@ export default function Home() {
           <button onClick={logout} type="button" className={styles.button}>Sign Out</button>
         </div>
       </div>
+      </div> 
       </div>
     </div>
   )
 }
+
+
