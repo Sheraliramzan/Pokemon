@@ -57,7 +57,7 @@ export default function Home() {
           height={120}
           margin-bottom={50}
           
-        />
+        
         <h1>Let's Catch em' all</h1>
         <div className={styles.loginCont}>
           
