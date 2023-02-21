@@ -67,7 +67,7 @@ export default function Home() {
                 }}    
               />
             </div>
-            <button onClick={login} type="button" className={styles.button}>Login User</button>
+            <button onClick={login} type="button" className={styles.button}><a href="/">Login User</a></button>
           </div>
         </form>
 
