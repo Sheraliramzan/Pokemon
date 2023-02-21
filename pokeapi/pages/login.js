@@ -50,7 +50,6 @@ export default function Home() {
     <div className={styles.loginbg}>
     <div className={styles.loginspace}>
       <div className={styles.loginCont}>
-        <img
 
           src="pokeverse.png"
           alt="Pokeball"
