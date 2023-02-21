@@ -42,7 +42,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.mainCont}>
+      <main>
         <div className={styles.main1}>
           <h1 className='headpok'>Pokemon</h1>
           <input className={styles.input} type="text" onChange={(event)=>{

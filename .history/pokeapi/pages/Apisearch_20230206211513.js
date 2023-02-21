@@ -44,7 +44,7 @@ export default function Home() {
       </Head>
       <main className={styles.mainCont}>
         <div className={styles.main1}>
-          <h1 className='headpok'>Pokemon</h1>
+          <h1 className='poke'>Pokemon</h1>
           <input className={styles.input} type="text" onChange={(event)=>{
             setPoke(event.target.value)
           }}/>

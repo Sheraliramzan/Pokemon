@@ -43,8 +43,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.mainCont}>
-        <div className={styles.main1}>
-          <h1 className='headpok'>Pokemon</h1>
+        <div className={styles.main}>
+          <h1>Pokemon</h1>
           <input className={styles.input} type="text" onChange={(event)=>{
             setPoke(event.target.value)
           }}/>

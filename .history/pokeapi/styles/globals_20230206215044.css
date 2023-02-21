@@ -28,6 +28,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-items: center;
+    margin-bottom: 10px;
   }
   .space1 {
     display: flex;
@@ -49,5 +50,3 @@ body{
     display: flex;
     flex-direction: row;
   }
-
-  

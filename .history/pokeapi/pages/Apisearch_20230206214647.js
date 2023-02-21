@@ -21,16 +21,7 @@ export default function Home() {
 
     const pokeSearch = () =>{
       axios.get(`https://pokeapi.co/api/v2/pokemon/${Poke}`).then((response)=>{
-        setPokeEl({
-          name:Poke, 
-          species: response.data.species.name, 
-          img: response.data.sprites.front_default,
-          hp: response.data.stats[0].base_stat,
-          attack: response.data.stats[1].base_stat,
-          defense: response.data.stats[2].base_stat,
-          type: response.data.types[0].type.name
-        });
-        setChoose(true);
+        console.log(response.data);
       });
     }
 
@@ -49,23 +40,7 @@ export default function Home() {
             setPoke(event.target.value)
           }}/>
           <button onClick={pokeSearch} className={styles.button}>Pokemon Search</button>
-        </div>
-        <div className="display">
-            {!choose ? (<h1>Enter your Pokemon!!</h1>) : 
-            (
-              <>
-                <h1>{PokeEl.name}</h1>
-                <img src={PokeEl.img}/>
-                <h3>Species: {PokeEl.species}</h3>
-                <h3>Type: {PokeEl.type}</h3>
-                <h4>Hp: {PokeEl.hp}</h4>
-                <h4>Attak: {PokeEl.attack}</h4>
-                <h4>Defense: {PokeEl.defense}</h4>
-                
-              </>
-              
-            )}
-        </div>
+        //</div>
       </main>
     </>
     

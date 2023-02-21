@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    m
   }
   .display h3,h4{
     margin:6px;
@@ -49,5 +49,3 @@ body{
     display: flex;
     flex-direction: row;
   }
-
-  

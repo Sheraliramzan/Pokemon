@@ -21,16 +21,7 @@ export default function Home() {
 
     const pokeSearch = () =>{
       axios.get(`https://pokeapi.co/api/v2/pokemon/${Poke}`).then((response)=>{
-        setPokeEl({
-          name:Poke, 
-          species: response.data.species.name, 
-          img: response.data.sprites.front_default,
-          hp: response.data.stats[0].base_stat,
-          attack: response.data.stats[1].base_stat,
-          defense: response.data.stats[2].base_stat,
-          type: response.data.types[0].type.name
-        });
-        setChoose(true);
+        console.
       });
     }
 
