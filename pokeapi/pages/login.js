@@ -83,7 +83,7 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.Buttonspacing}> 
-                <button onClick={login} type="button" className={styles.button}>Sign In</button>
+                <button onClick={login} type="button" className={styles.button}><a href="/home">Sign In</a></button>
                 </div>
               </div>
             </form>
