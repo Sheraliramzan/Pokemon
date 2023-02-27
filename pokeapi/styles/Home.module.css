@@ -40,6 +40,29 @@
   align-content: center;
 
 }
+.containerMain {
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 0.5fr 2fr 0.5fr;
+grid-column-gap: 100px;
+grid-row-gap: 0px;
+  }
+.div1 { 
+  grid-area: 1 / 1 / 4 / 2;
+ }
+.div2 { 
+  grid-area: 2 / 2 / 3 / 3; 
+  z-index: 2;
+}
+.div3 { 
+  grid-area: 2 / 2 / 3 / 4; 
+}
+.div4{
+  position: absolute;
+  top: 349px;
+  z-index: -1;
+}
+
 .Logincont {
   width: 350px;
   height: 38px;

@@ -13,12 +13,10 @@ export default function PokeInfoCard({
 
       <Typography marR={me}>{text}</Typography>
       <img
-        
         src={src}
         alt="Pokemon"
         width={200}
         height={200}
-        margin-top={-50}
       />
         <Line></Line>
       
@@ -28,12 +26,12 @@ export default function PokeInfoCard({
 }
 
 const Card = styled.div `
-width: 350px;
-height: 450px;
+// width: 350px;
+// height: 450px;
 display: flex;
 flex-direction:row;
 color: #FFFFFF;
-background-color: #FFFFFF;
+// background-color: #FFFFFF;
 border-radius: 12px;
 align-content: center;
 padding: 10px;
@@ -43,19 +41,20 @@ margin-left: -24px;
 `
 
 const RedCard = styled.div `
-width: 350px;
-height: 450px;
+// width: 350px;
+// height: 450px;
 
 color: #FFFFFF;
-background-color: #C93030;
-box-shadow: 5px 7px #888888;
-border-radius: 12px;
-align-content: center;
+// background-color: #C93030;
+// box-shadow: 5px 7px #888888;
+// border-radius: 12px;
+align-content: left;
 padding: 10px;
 justify-items:center;
 margin-bottom:30px;
 position: relative;
-left: 30px;
+top: 60px;
+left: 180px;
 `
 
 const Line = styled.hr`

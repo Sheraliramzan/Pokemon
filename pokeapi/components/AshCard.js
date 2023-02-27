@@ -25,7 +25,7 @@ export default function AshCard() {
 }
 
 const Card = styled.div `
-width: 340px;
+width: 540px;
 height:70px;
 display: flex;
 flex-direction:row;
@@ -35,7 +35,7 @@ box-shadow: 5px 10px #888888;
 border-radius: 12px;
 align-content: center;
 justify-content: center;
-margin-top: -80px;
+margin-top: -120px;
 padding: 10px;
 text-align:center;
 `
