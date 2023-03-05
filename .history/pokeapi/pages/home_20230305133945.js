@@ -25,9 +25,13 @@ export default function Home() {
               return (
                 <div key={index}>
                   <PokeCard
-                    image2={ash.Image2}
-                    name={ash.Name}
+                    id={ash.id}
                     image={ash.Image}
+                    name={ash.Name}
+                    status={ash.status}
+                    evolution={ash.evolution}
+                    caughtIn={ash['caught in']}
+                    currentLocation={ash['current location']}
                   />
                 </div>
               )

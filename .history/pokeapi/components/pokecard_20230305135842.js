@@ -9,7 +9,7 @@ export default function PokeCard({
     <div className={styles.card}>
       <img src={image2} alt={name} />
       <h2>{name}</h2>
-      <img src={image} alt={name} />
+      
     </div>
   );
 }

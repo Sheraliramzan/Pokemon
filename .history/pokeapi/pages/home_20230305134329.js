@@ -25,9 +25,7 @@ export default function Home() {
               return (
                 <div key={index}>
                   <PokeCard
-                    image2={ash.Image2}
                     name={ash.Name}
-                    image={ash.Image}
                   />
                 </div>
               )

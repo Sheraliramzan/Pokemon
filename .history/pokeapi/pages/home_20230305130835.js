@@ -1,14 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import PokeCard from '../components/pokecard'
 import AshCard from '../components/AshCard'
-import PokeCard from '../components/PokeCard'
 import PokeInfoCard from '../components/InfoCard'
-import ashs from '../../data/ashspokemon.json'
+import ashs from '@ash.json'
 
 
 export default function Home() {
-  console.log(ashs);
   return (
     <>
       <Head>
@@ -18,21 +17,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.bg}>
-        <div className={styles.containerMain}> 
-          <AshCard />
-          <div className={styles.div1}>
+      <div className={styles.containerMain}> 
+        <AshCard />
+        <div className={styles.div1}>
             {ashs.map((ash, index) => {
               return (
                 <div key={index}>
                   <PokeCard
-                    image2={ash.Image2}
-                    name={ash.Name}
-                    image={ash.Image}
+                    title={ash.name}
                   />
                 </div>
               )
             })}
-          </div>
+        </div>
         </div>
       </main>
     </>

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import AshCard from '../components/AshCard'
-import PokeCard from '../components/PokeCard'
+impo
 import PokeInfoCard from '../components/InfoCard'
 import ashs from '../../data/ashspokemon.json'
 
@@ -25,9 +25,13 @@ export default function Home() {
               return (
                 <div key={index}>
                   <PokeCard
-                    image2={ash.Image2}
-                    name={ash.Name}
+                    id={ash.id}
                     image={ash.Image}
+                    name={ash.Name}
+                    status={ash.status}
+                    evolution={ash.evolution}
+                    caughtIn={ash['caught in']}
+                    currentLocation={ash['current location']}
                   />
                 </div>
               )
