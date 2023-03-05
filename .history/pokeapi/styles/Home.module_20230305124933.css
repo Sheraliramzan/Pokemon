@@ -2,7 +2,7 @@
 .mainCont{
   font-family: 'Courier New', Courier, monospace;
   width: 100%;
-  height: 100%;
+  height: 100;
   background-image:url('../public/pikachu\ running.gif');
   background-repeat: no-repeat;
   background-attachment: fixed;
