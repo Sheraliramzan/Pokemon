@@ -42,24 +42,24 @@ export default function Home() {
       </Head>
       <main className=" min-h-screen flex flex-col justify-center items-center py-4 bg-fixed bg-cover bg-center h-screen" style={{ backgroundImage:"url('pikachu running.gif')" }}>
         <div className="w-full md:w-1/2 max-w-md px-4">
-          <h1 className='text-4xl font-bold text-center mb-4 text-amber-300'>Pokemon</h1>
+          <h1 className='text-4xl font-bold text-center mb-4'>Pokemon</h1>
           <div className="flex items-center mb-4">
             <input className="border rounded-l-lg px-2 py-1 w-full md:w-4/5" type="text" onChange={(event)=>{
               setPoke(event.target.value)
             }}/>
-            <button onClick={pokeSearch} className="bg-amber-500 hover:bg-green-600 rounded-r-lg px-4 py-1 text-white">Search</button>
+            <button onClick={pokeSearch} className="bg-green-500 hover:bg-green-600 rounded-r-lg px-4 py-1 text-white">Search</button>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-full md:w-1/2 max-w-md px-4 bg-white rounded-lg shadow-lg content-center justify">
               {!choose ? (<h1 className="text-center mb-4">Enter your Pokemon!!</h1>) : 
               (
                 <>
-                  <h1 className='text-2xl font-bold mb-2 text-amber-500 '>{PokeEl.name}</h1>
+                  <h1 className='text-2xl font-bold mb-2'>{PokeEl.name}</h1>
                   <img src={PokeEl.img} alt={PokeEl.name} className="mb-4"/>
-                  <h3 className="text-lg mb-1 font-bold">Species: {PokeEl.species}</h3>
-                  <h3 className="text-lg mb-1 font-bold">Type: {PokeEl.type}</h3>
-                  <h4 className="text-base mb-1 font-bold">Hp: {PokeEl.hp}</h4>
-                  <h4 className="text-base mb-1 font-bold">Attack: {PokeEl.attack}</h4>
-                  <h4 className="text-base mb-1 font-bold">Defense: {PokeEl.defense}</h4>
+                  <h3 className="text-lg mb-1">Species: {PokeEl.species}</h3>
+                  <h3 className="text-lg mb-1">Type: {PokeEl.type}</h3>
+                  <h4 className="text-base mb-1">Hp: {PokeEl.hp}</h4>
+                  <h4 className="text-base mb-1">Attack: {PokeEl.attack}</h4>
+                  <h4 className="text-base mb-1">Defense: {PokeEl.defense}</h4>
                   
                 </>
                 

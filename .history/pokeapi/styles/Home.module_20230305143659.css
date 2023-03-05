@@ -1,0 +1,228 @@
+
+.mainCont{
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  height: 100%;
+  background-image:url('../public/pikachu\ running.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.main{
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background-image:url('../public/pikachu\ running.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  
+}
+.main1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem;
+  min-height: 100vh;
+  background-image:url('../public/pikachu\ running.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  align-content: center;
+
+}
+.containerMain {
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 0.5fr 2fr 0.5fr;
+grid-column-gap: 100px;
+grid-row-gap: 0px;
+  }
+.div1 { 
+  grid-area: 1 / 1 / 4 / 2;
+ }
+.div2 { 
+  grid-area: 2 / 2 / 3 / 3; 
+  z-index: 2;
+}
+.div3 { 
+  grid-area: 2 / 2 / 3 / 4; 
+}
+.div4{
+  position: absolute;
+  top: 349px;
+  z-index: -1;
+}
+
+.LoginCont {
+  width: 350px;
+  height: 38px;
+  margin: 12px;
+  border-radius: 8px;
+  background-color: white;
+  color: grey;
+  box-shadow: 0px 3px  rgb(135, 135, 135) ;
+  }
+  
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+
+.description {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  color: black;
+  flex-direction: column;
+}
+.input{
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0.5px #989898;
+  box-shadow: 4px 4px  rgb(135, 135, 135) ;
+  font-size: 18px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin: 60px;
+}
+.button{
+  width: 300px;
+  margin-top: 30px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 4px  rgb(135, 135, 135) ;
+  background-color: #E33333;
+  font-size: 21px;
+  font-weight: 200;
+  color: white;
+  align-items: center;
+}
+.button:hover{
+  cursor: pointer;
+  opacity: 0.5;
+  color: red;
+  background-color: white;
+
+}
+
+@media (max-width: 414px) {
+  .loginbg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem;
+    min-height: 100vh;
+    background-color: rgb(237, 237, 237);
+    
+  }
+}
+/* Login js styling below
+
+   Includes spacing and flex displays to for the login content
+*/
+
+.loginbg{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem;
+  min-height: 100vh;
+  background-image:url('../public/Pokedex\ bg.png');
+  background-repeat: no-repeat;
+  background-position: relative;
+  align-content: center;
+  background-color: rgb(237, 237, 237);
+  background-size: 67%;
+  background-position: 100% 0%; 
+}
+.Logincont {
+  display: flex;
+  flex-direction: row;
+}
+
+.Labelheader {
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.loginspace {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: -60px;
+  margin-left: -1000px;
+}
+
+.Inputspacing {
+margin-top: 40px;
+}
+
+.Buttonspacing {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+
+.greyheader {
+  font-size: 16px;
+  color: grey;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+.card {
+  width: 340px;
+height:70px;
+display: flex;
+flex-direction:row;
+color: #FFFFFF;
+background-color: #FFFFFF;
+box-shadow: 5px 10px #888888;
+border-radius: 12px;
+align-content: center;
+justify-content: center;
+margin-top: -80px;
+padding: 10px;
+text-align:center;
+}

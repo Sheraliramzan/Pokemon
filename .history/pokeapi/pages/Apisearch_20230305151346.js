@@ -53,13 +53,13 @@ export default function Home() {
               {!choose ? (<h1 className="text-center mb-4">Enter your Pokemon!!</h1>) : 
               (
                 <>
-                  <h1 className='text-2xl font-bold mb-2 text-amber-500 '>{PokeEl.name}</h1>
+                  <h1 className='text-2xl font-bold mb-2 bg-amber-500 '>{PokeEl.name}</h1>
                   <img src={PokeEl.img} alt={PokeEl.name} className="mb-4"/>
-                  <h3 className="text-lg mb-1 font-bold">Species: {PokeEl.species}</h3>
-                  <h3 className="text-lg mb-1 font-bold">Type: {PokeEl.type}</h3>
-                  <h4 className="text-base mb-1 font-bold">Hp: {PokeEl.hp}</h4>
-                  <h4 className="text-base mb-1 font-bold">Attack: {PokeEl.attack}</h4>
-                  <h4 className="text-base mb-1 font-bold">Defense: {PokeEl.defense}</h4>
+                  <h3 className="text-lg mb-1">Species: {PokeEl.species}</h3>
+                  <h3 className="text-lg mb-1">Type: {PokeEl.type}</h3>
+                  <h4 className="text-base mb-1">Hp: {PokeEl.hp}</h4>
+                  <h4 className="text-base mb-1">Attack: {PokeEl.attack}</h4>
+                  <h4 className="text-base mb-1">Defense: {PokeEl.defense}</h4>
                   
                 </>
                 
