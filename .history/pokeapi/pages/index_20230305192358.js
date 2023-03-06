@@ -8,7 +8,7 @@ import {
 import { useState } from 'react';
 import { auth } from '../firebase/firebase.config';
 import styles from '../styles/Home.module.css';
-import Image from 'next/image';
+
 
 
 
@@ -52,11 +52,7 @@ export default function Home() {
       <div className={styles.loginCont}>
 
         <Image 
-              src="/pokeverse.png"
-              alt="Pokeball"
-              width={450}
-              height={120}
-              margin-bottom={50}
+          
         />
           
         

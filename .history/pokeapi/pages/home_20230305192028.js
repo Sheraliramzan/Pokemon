@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gray-200 bg-scroll bg-center min-h-screen" style={{ backgroundImage:"url('pikachu running.gif')" }}>
+      <main className="bg-gray-200 bg-cover bg-center min-h-screen" style={{ backgroundImage:"url('pikachu running.gif')" }}>
         <div className="container mx-auto py-6 px-4">
           <AshCard />
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-3">

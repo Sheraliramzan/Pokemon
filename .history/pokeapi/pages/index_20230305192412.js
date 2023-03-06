@@ -52,7 +52,7 @@ export default function Home() {
       <div className={styles.loginCont}>
 
         <Image 
-              src="/pokeverse.png"
+              src="pokeverse.png"
               alt="Pokeball"
               width={450}
               height={120}
