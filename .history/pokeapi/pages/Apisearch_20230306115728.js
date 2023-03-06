@@ -62,9 +62,7 @@ export default function Home() {
                     <h4 className="text-base mb-1 font-bold">Attack: {PokeEl.attack}</h4>
                     <h4 className="text-base mb-1 font-bold">Defense: {PokeEl.defense}</h4>
                   </div>
-                  <div>
-                    
-                  </div>
+                  <
                 </>
                 
               )}

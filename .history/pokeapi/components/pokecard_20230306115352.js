@@ -11,7 +11,7 @@ export default function PokeCard({
       <img src={image2} alt={name} />
       <h2>{name}</h2>
       <img src={image} alt={name} />
-     
+     <h2>Status:{stat}</h2>
     </div>
   );
 }

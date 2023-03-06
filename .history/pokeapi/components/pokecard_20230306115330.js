@@ -4,7 +4,6 @@ export default function PokeCard({
   name,
   image,
   image2,
-  status
 }) {
   return (
     <div className={styles.card}>
