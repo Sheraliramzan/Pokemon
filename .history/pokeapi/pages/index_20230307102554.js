@@ -8,8 +8,7 @@ import { useState } from 'react';
 import { auth } from '../firebase/firebase.config';
 import Image from 'next/image';
 
-
-export default function Login() {
+export default function Home() {
 
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
@@ -41,7 +40,7 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen bg-blue-100 bg-fixed bg-center  flex justify-center items-center" style={{ backgroundImage:"url('pikachu running.gif')" }}>
+    <div className="min-h-screen bg-blue-100 bg-scroll bg-center  flex justify-center items-center" style={{ backgroundImage:"url('pikachu running.gif')" }}>
       <div className="bg-amber-200/80 p-10 rounded-lg shadow-xl max-w-md w-full">
         <div className="flex justify-center items-center mb-10">
           <Image 
@@ -80,7 +79,7 @@ export default function Login() {
             <div className="flex justify-center">
               <button
                 type="button"
-                className="bg-amber-500 hover:bg-amber-800 text-white px-4 py-2 rounded-lg w-full md:w-auto"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg w-full md:w-auto"
                 onClick={login}
               >
                 Sign In
@@ -88,7 +87,7 @@ export default function Login() {
             </div>
           </form>
           <div className="mt-8">
-            <h2 className="text-lg text-white font-medium mb-2">User Logged in:</h2>
+            <h2 className="text-lg text font-medium mb-2">User Logged in:</h2>
             <div className="bg-gray-200 p-2 rounded-lg">
               {user?.email}
             </div>

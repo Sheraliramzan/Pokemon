@@ -41,7 +41,7 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen bg-blue-100 bg-fixed bg-center  flex justify-center items-center" style={{ backgroundImage:"url('pikachu running.gif')" }}>
+    <div className="min-h-screen bg-blue-100 bg-scroll bg-center  flex justify-center items-center" style={{ backgroundImage:"url('pikachu running.gif')" }}>
       <div className="bg-amber-200/80 p-10 rounded-lg shadow-xl max-w-md w-full">
         <div className="flex justify-center items-center mb-10">
           <Image 

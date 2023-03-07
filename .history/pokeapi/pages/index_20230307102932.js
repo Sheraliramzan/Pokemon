@@ -7,9 +7,9 @@ import {
 import { useState } from 'react';
 import { auth } from '../firebase/firebase.config';
 import Image from 'next/image';
+import {useHistory} from ''
 
-
-export default function Login() {
+export default function Home() {
 
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
@@ -41,7 +41,7 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen bg-blue-100 bg-fixed bg-center  flex justify-center items-center" style={{ backgroundImage:"url('pikachu running.gif')" }}>
+    <div className="min-h-screen bg-blue-100 bg-scroll bg-center  flex justify-center items-center" style={{ backgroundImage:"url('pikachu running.gif')" }}>
       <div className="bg-amber-200/80 p-10 rounded-lg shadow-xl max-w-md w-full">
         <div className="flex justify-center items-center mb-10">
           <Image 
