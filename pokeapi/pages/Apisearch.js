@@ -1,9 +1,22 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export default function Home() {
+
+  const [cardData, setCardData] = useState(null);
+
+  useEffect(() => {
+    axios.get(`https://api.pokemontcg.io/v2/cards?q=name:${search}`)
+      .then(response => {
+        setCardData(response.data.data[0]);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
+  
 
     const[Poke, setPoke]=useState('');
     const [PokeEl, setPokeEl]= useState({
@@ -63,7 +76,12 @@ export default function Home() {
                     <h4 className="text-base mb-1 font-bold">Defense: {PokeEl.defense}</h4>
                   </div>
                   <div>
-                    
+                  {cardData &&
+                    <div>
+                     <h2>{cardData.name}</h2>
+                      <img src={cardData.images.small} alt={cardData.name} />
+                    </div>
+                  }
                   </div>
                 </>
                 
