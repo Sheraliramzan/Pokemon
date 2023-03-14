@@ -19,7 +19,7 @@ export default function Home() {
             {ashs.map((ashs, index) => {
               return (
                 
-                <div key={index} className="flex justify-center cursor-pointer text-white">
+                <div key={index} className="flex justify-center txt">
                   <PokeCard
                     image2={ashs.Image2}
                     name={ashs.Name}

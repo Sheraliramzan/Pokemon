@@ -17,8 +17,8 @@ export default function PokeCard({
   }
 
   return (
-    <div className="w-full">
-      <div className="bg-gray-800 rounded-lg overflow-hidden ">
+    <div className="w-full c">
+      <div className="bg-gray-800 rounded-lg overflow-hidden">
         <div className='flex'>
           <img className="w-32 mx-auto" src={showImage ? image : image2} alt={name} onClick={toggleImage} />
           <h2 className="text-center font-bold text-2xl mt-11">{name}</h2>
