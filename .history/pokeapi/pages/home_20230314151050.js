@@ -22,9 +22,8 @@ export default function Home() {
                 
                 <div key={index} className="flex justify-center cursor-pointer text-white">
                   <motion.div
-                    whileHover={{ scale: 0.9 }}
-                    animate={{ scale: [1, 1.1, 1] }}
-                    transition={{ duration: 0.5 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
                     className="w-full rounded-lg shadow-md overflow-hidden"
                   >
                     <PokeCard
@@ -36,7 +35,12 @@ export default function Home() {
                       caught={ashs.caught}
                       location={ashs.location}
                     />
-                    
+                    <motion.h2
+                      whileHover={{ y: -5 }}
+                      className="text-center font-bold text-2xl mt-11"
+                    >
+                      {ashs.Name}
+                    </motion.h2>
                   </motion.div>
                 </div>
               )

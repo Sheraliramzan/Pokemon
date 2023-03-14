@@ -22,9 +22,8 @@ export default function Home() {
                 
                 <div key={index} className="flex justify-center cursor-pointer text-white">
                   <motion.div
-                    whileHover={{ scale: 0.9 }}
-                    animate={{ scale: [1, 1.1, 1] }}
-                    transition={{ duration: 0.5 }}
+                    whileHover={{ scale:  }}
+                    whileTap={{ scale: 0.9 }}
                     className="w-full rounded-lg shadow-md overflow-hidden"
                   >
                     <PokeCard
