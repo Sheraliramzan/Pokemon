@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/Pikachu.png" />
       </Head>
       <main className="bg-gray-200 bg-fixed bg-center min-h-screen" style={{ backgroundImage:"url('pikachu running.gif')" }}>
-        <AshCard/>
+        
         <div className="container mx-auto py-6 px-4">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 lg:gap-6 mt-4">
             {ashs.map((ash, index) => {

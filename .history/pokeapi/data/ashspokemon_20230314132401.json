@@ -1,0 +1,106 @@
+
+ [
+       {
+          "id": 1,
+          "Image2": "Pokeball.png",
+          "Name": "Pikachu",
+          "Image": "Pikachu.png",
+          "status": "Starter",
+          "evolution": "Not fully evolved",
+          "caught": "EP001: Pokémon - I Choose You!",
+          "current location": "In rotation"
+
+       },
+       {
+          "id": 2,
+          "Image2": "Pokeball.png",
+          "Name": "Butterfree",
+          "Image":"Butterfree.png",
+          "status": "Non-starter",
+          "evolution": "Fully evolved",
+          "caught in": "EP003: Ash Catches a Pokémon",
+          "current location": "Released into the wild"
+       },
+       {
+          "id": 3,
+          "Image2": "Pokeball.png",
+          "Name": "Pidgeot",
+          "Image":"Pidgeot.png",
+          "status": "Non-starter",
+          "evolution": "Fully evolved",
+          "caught in": "EP003: Ash Catches a Pokémon",
+          "current location": "Released into the wild"
+       },
+       {
+            "id": 4,
+            "Image2": "Pokeball.png",
+            "Name": "Bulbasaur",
+            "Image":"Bulbasaur.png",
+            "status": "Starter",
+            "evolution": "Not fully evolved",
+            "caught in": "EP010: Bulbasaur and the Hidden Village",
+            "current location": "Professor Oaks Laboratory"
+        },
+        {
+            "id": 5,
+            "Image2": "Pokeball.png",
+            "Name": "Charizard",
+            "Image":"Charizard.png",
+            "status": "Starter",
+            "evolution": "Fully evolved",
+            "caught in": "EP011: Charmander - The Stray Pokémon",
+            "current location": "Professor Oaks Laboratory"
+        },
+        {
+            "id": 6,
+            "Image2": "Pokeball.png",
+            "Name": "Squirtle",
+            "Image":"Squirtle.png",
+            "status": "Starter",
+            "evolution": "Not fully evolved",
+            "caught in": "EP012: Here Comes the Squirtle Squad",
+            "current location": "Professor Oaks Laboratory"
+        },
+        {
+            "id": 7,
+            "Image2": "Pokeball.png",
+            "Name": "Kingler",
+            "Image":"Kingler.png",
+            "status": "Non-starter",
+            "evolution": "Fully evolved",
+            "caught in": "EP013: Mystery at the Lighthouse",
+            "current location": "Professor Oaks Laboratory"
+        },
+        {
+            "id": 8,
+            "Image2": "Pokeball.png",
+            "Name": "Primape",
+            "Image":"Primape.png",
+            "status": "Non-starter",
+            "evolution": "Fully evolved",
+            "caught in": "EP025: Pokemon Scent-station",
+            "current location": "With Anthony"
+        },
+        {
+            "id": 9,
+            "Image2": "Pokeball.png",
+            "Name": "Muk",
+            "Image":"Muk.png",
+            "status": "Non-starter",
+            "evolution": "Fully evolved",
+            "caught in": "EP030: Sparks Fly for Magnemite",
+            "current location": "Professor Oaks Laboratory"
+        },
+        {
+            "id": 10,
+            "Image2": "Pokeball.png",
+            "Name": "Tauros",
+            "Image":"Tauros.png",
+            "status": "Non-starter",
+            "evolution": "Cannot evolve",
+            "caught in": "EP035: (Banned Episode)",
+            "current location": "Professor Oaks Laboratory"
+        } 
+       
+]
+ 
