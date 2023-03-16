@@ -3,7 +3,6 @@ import PokeCard from '../components/PokeCard'
 import ashs from '../data/ashspokemon.json'
 import AshCard from '../components/AshCard'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 
 export default function Home() {
   console.log(ashs);
@@ -19,15 +18,9 @@ export default function Home() {
         <div>
           <AshCard/>
         </div>
-        <div className="flex justify-center mt-8">
-          <Link href="/Apisearch">
-            <motion.button
-             whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="bg-amber-500 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded"
-            >
-              Search for All Pokemon's
-            </motion.button>
+        <div>
+          <Link>
+          <button>Search for Other </button>
           </Link>
         </div>
         <div className="container mx-auto py-6 px-4">
