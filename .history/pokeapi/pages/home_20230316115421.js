@@ -19,17 +19,11 @@ export default function Home() {
         <div>
           <AshCard/>
         </div>
-        <div className="flex justify-center mt-8">
-          <Link href="/Apisearch">
-            <motion.button
-             whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="bg-amber-500 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded"
-            >
-              Search for All Pokemon's
-            </motion.button>
-          </Link>
-        </div>
+        <div className="flex justify-center">
+  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    Search for All Pokemon's
+  </button>
+</div>
         <div className="container mx-auto py-6 px-4">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 lg:gap-6 mt-4">
             {ashs.map((ashs, index) => {
