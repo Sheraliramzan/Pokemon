@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 2000);
   }, []);
 
   const [PokeI, setPokeI] = useState("");
@@ -107,7 +107,7 @@ export default function Home() {
             animationData={ploading}
             loop={true}
             autoplay={true}
-            style={{ width: "400px", height: "400px" }}
+            style={{ width: "400px", height: "100px" }}
           />
         </div>
       ) : (
