@@ -7,7 +7,6 @@ import {
 import { useState } from 'react';
 import { auth } from '../firebase/firebase.config';
 import Image from 'next/image';
-import Link from 'next/link';
 
 
 export default function Login() {

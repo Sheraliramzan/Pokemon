@@ -7,7 +7,6 @@ import {
 import { useState } from 'react';
 import { auth } from '../firebase/firebase.config';
 import Image from 'next/image';
-import Link from 'next/link';
 
 
 export default function Login() {
@@ -79,7 +78,7 @@ export default function Login() {
               />
             </div>
             <div className="flex justify-center">
-             <Link href="/home">
+              <
               <button
                 type="button"
                 className="bg-amber-500 hover:bg-amber-800 text-white px-4 py-2 rounded-lg w-full md:w-auto"
@@ -87,7 +86,6 @@ export default function Login() {
               >
                 Sign In
               </button>
-             </Link>
             </div>
           </form>
           <div className="mt-8">
