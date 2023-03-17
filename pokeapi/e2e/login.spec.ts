@@ -19,3 +19,42 @@ test('Test multiple tabs', async ({ browser }) => {
   await page1.goto('http://localhost:3000/')
   await page2.goto('http://localhost:3000/')
 })
+
+
+test.describe('Main area', () => {
+  test('Header Tag', async({ page }) => {
+      await page.goto('http://localhost:3000/')
+
+      await expect(page.locator('h1')).toContainText("Let's Catch em' all");
+  })
+
+
+  test('Checking for inputs', async({ page }) => { 
+      await page.goto('http://localhost:3000/')
+      await expect(page.locator('div > input')).toHaveCount(2);
+  })
+
+  test('link', async({ page }) => {
+    await page.goto('http://localhost:3000/Apisearch')
+
+    await expect(page.locator('div')).toHaveCount(8);
+
+    
+})
+test('making sure theres a button on Apisearch', async({ page }) => {
+  await page.goto('http://localhost:3000/Apisearch')
+
+  await expect(page.locator('button')).toHaveCount(1);
+
+  
+})
+test('The meta tag', async ({ page }) => { 
+  // Start from the index page (the baseURL is set via the webServer in the playwright.config.ts)
+  await page.goto('http://localhost:3000/Apisearch')
+  
+
+  const metaDescriptionThree = page.locator('meta[property="og:description"]');
+  await expect(metaDescriptionThree).toHaveAttribute('content', 'This is a Pokemon Api Search')
+})
+
+})
