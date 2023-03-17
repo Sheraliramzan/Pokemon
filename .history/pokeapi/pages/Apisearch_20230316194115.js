@@ -2,12 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import ploading from '../data/ploading.json'
-import Lottie from 'lottie-react'
+import ploading from '../data/plao'
 
 export default function Home() {
-
-   const [loading, setLoading] = useState(false);
 
   const [PokeI, setPokeI] = useState('');
   const [PokeIL, setPokeIL] = useState({
@@ -20,8 +17,6 @@ export default function Home() {
     images: "",
   });
   const [choose,setChoose ] = useState(false);
-
- 
 
   useEffect(() => {
     let delayTimeout;
@@ -40,7 +35,6 @@ export default function Home() {
             images: response.data.data[0].images.small,
           });
           setChoose(true);
-         
         })
         .catch(error => {
           console.log(error);

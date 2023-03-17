@@ -4,11 +4,11 @@ test('should navigate to the home page', async ({ page }) => {
   // Start from the login page (the baseURL is set via the webServer in the playwright.config.ts)
   await page.goto('http://localhost:3000/')
   // Find an element with the text 'About Page' and click on it
-  await page.click('text=Sign in')
+  await page.click('text =Sign in')
   // The new URL should be index page (baseURL is used there)
   await expect(page).toHaveURL('http://localhost:3000/home')
   // The new page should contain an h1 with "About Page"
-  await expect(page.locator('title')).toContainText('Ash Pokemon')
+  await expect(page.locator('title')).toContainText('Home')
 })
 
 test('Test multiple tabs', async ({ browser }) => {

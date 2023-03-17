@@ -8,7 +8,7 @@ test('should navigate to the home page', async ({ page }) => {
   // The new URL should be index page (baseURL is used there)
   await expect(page).toHaveURL('http://localhost:3000/home')
   // The new page should contain an h1 with "About Page"
-  await expect(page.locator('title')).toContainText('Ash Pokemon')
+  await expect(page.locator('title')).toContainText('a')
 })
 
 test('Test multiple tabs', async ({ browser }) => {

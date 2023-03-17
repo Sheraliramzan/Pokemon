@@ -20,7 +20,6 @@ export default function Home() {
     images: "",
   });
   const [choose,setChoose ] = useState(false);
-
  
 
   useEffect(() => {
@@ -40,7 +39,7 @@ export default function Home() {
             images: response.data.data[0].images.small,
           });
           setChoose(true);
-         
+          setLoading(true);
         })
         .catch(error => {
           console.log(error);

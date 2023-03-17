@@ -20,7 +20,6 @@ export default function Home() {
     images: "",
   });
   const [choose,setChoose ] = useState(false);
-
  
 
   useEffect(() => {

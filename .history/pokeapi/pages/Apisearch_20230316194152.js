@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import ploading from '../data/ploading.json'
-import Lottie from 'lottie-react'
 
 export default function Home() {
 
@@ -20,7 +19,6 @@ export default function Home() {
     images: "",
   });
   const [choose,setChoose ] = useState(false);
-
  
 
   useEffect(() => {
@@ -40,7 +38,6 @@ export default function Home() {
             images: response.data.data[0].images.small,
           });
           setChoose(true);
-         
         })
         .catch(error => {
           console.log(error);
