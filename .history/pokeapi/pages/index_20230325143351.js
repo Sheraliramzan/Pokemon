@@ -52,12 +52,12 @@ export default function Login() {
             height={120}
           />
         </div>
-        <h1 className="text-3xl font-bold text-red-500 text-center">Let's Catch em' all</h1>
+        <h1 className="text-3xl font-bold text-white text-center">Let's Catch em' all</h1>
         <div className="mt-8">
           <form onSubmit={handleSubmit}>
-            <h2 className="text-lg text-red-500 font-medium mb-2">Please enter your details</h2>
+            <h2 className="text-lg text-white font-medium mb-2">Please enter your details</h2>
             <div className="mb-2">
-              <label className="block text-red-500 font-medium mb-1">Email</label>
+              <label className="block text-black font-medium mb-1">Email</label>
               <input
                 type="email"
                 className="w-full border border-gray-400 p-2 rounded-lg"
@@ -68,7 +68,7 @@ export default function Login() {
               />
             </div>
             <div className="mb-4">
-              <label className="block text-red-500 font-medium mb-1">Password</label>
+              <label className="block text-black font-medium mb-1">Password</label>
               <input
                 type="password"
                 className="w-full border border-gray-400 p-2 rounded-lg"
@@ -91,7 +91,7 @@ export default function Login() {
             </div>
           </form>
           <div className="mt-8">
-            <h2 className="text-lg text-red-500 font-medium mb-2">User Logged in:</h2>
+            <h2 className="text-lg text-white font-medium mb-2">User Logged in:</h2>
             <div className="bg-gray-200 p-2 rounded-lg">
               {user?.email}
             </div>

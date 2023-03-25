@@ -91,7 +91,7 @@ export default function Login() {
             </div>
           </form>
           <div className="mt-8">
-            <h2 className="text-lg text-red-500 font-medium mb-2">User Logged in:</h2>
+            <h2 className="text-lg text-white font-medium mb-2">User Logged in:</h2>
             <div className="bg-gray-200 p-2 rounded-lg">
               {user?.email}
             </div>
